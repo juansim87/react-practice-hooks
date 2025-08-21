@@ -1,23 +1,36 @@
+.mobile {
+	background-color: aquamarine;
+}
+
+.desktop {
+    background-color: bisque;
+}
+
 .exercise {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .password-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
 }
 
 .password-btn {
-    cursor: pointer;
-    width: fit-content;
-    padding: 2px 8px;
-    border-radius: 8px;
+	cursor: pointer;
+	width: fit-content;
+	padding: 2px 8px;
+	border-radius: 8px;
 }
 
 .password-btn:hover {
-    background-color: rgba(255, 0, 0, 0.432);
+	background-color: rgba(255, 0, 0, 0.432);
+}
+
+.operation {
+	display: flex;
+	gap: 20px;
 }

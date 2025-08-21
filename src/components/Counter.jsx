@@ -21,18 +21,20 @@ export const Counter = () => {
 	return (
 		<div>
 			<h2>Counter</h2>
-			<p>TOTAL COUNT: {count}</p>
-			<div>
+			<p>TOTAL COUNT: <span style={{fontWeight : "bold"}}>{count}</span></p>
+			<div className="operation">
 				<input
 					type="number"
+                    min={1}
 					value={toAdd}
 					onChange={(event) => setToAdd(event.target.valueAsNumber)}
 				/>
 				<button onClick={handleAdd}>Add {toAdd}</button>
 			</div>
-			<div>
+			<div className="operation">
 				<input
 					type="number"
+                    min={1}
 					value={toSubstract}
 					onChange={(event) => setToSubstract(event.target.valueAsNumber)}
 				/>
