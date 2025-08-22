@@ -66,3 +66,28 @@
 		#ffffff 100%
 	);
 }
+
+.layout-box {
+	display: grid;
+	gap: 20px;
+}
+
+.is-mobile {
+	grid-template-columns: repeat(2, 1fr)
+
+}
+
+.is-tablet {
+	grid-template-columns: repeat(3, 1fr)
+}
+
+.is-desktop {
+	grid-template-columns: repeat(4, 1fr)
+}
+
+.layout-element {
+	width: 80px;
+	height: 80px;
+	background-color: chocolate;
+	border: 1px solid black;
+}

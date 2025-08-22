@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useResponsive } from "./useResponsive";
 
 export const useDevice = () => {

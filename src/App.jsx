@@ -6,6 +6,7 @@ import { Counter } from "./components/Counter";
 import { useResponsive } from "./hooks/useResponsive";
 import { PokemonViewer } from "./components/Pokemonviewer";
 import { ShowDevice } from "./components/ShowDevice";
+import { LayoutSwitcher } from "./components/LayoutSwitcher";
 
 export const App = () => {
 	const layout = useResponsive();
@@ -19,6 +20,7 @@ export const App = () => {
 			<Counter />
 			<PokemonViewer />
 			<ShowDevice />
+			<LayoutSwitcher/>
 		</div>
 	);
 };
