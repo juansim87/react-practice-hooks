@@ -7,7 +7,6 @@ export const PokemonViewer = () => {
 	// const [pokemonQuery, setPokemonQuery] = useState("1");
 	// const key = pokemonQuery?.trim() || "1";
 
-
 	const {
 		data: pokemon,
 		loading,
@@ -20,11 +19,13 @@ export const PokemonViewer = () => {
 	// 	error,
 	// } = useFetch(`https://pokeapi.co/api/v2/pokemon/${key}`);
 
-
 	const handleInput = (event) => {
-		setPokemonId(Number(event.target.value));
+		const value = event.target.value;
+		if (/^\d*$/.test(value)) {
+			setPokemonId(value === "" ? "" : Number(value));
+		}
 	};
-
+    
 	// const handleInput = (e) => {
 	// 	const raw = e.target.value;
 	// 	const normalized = raw
