@@ -4,6 +4,7 @@ import "./styles.css";
 import { LoginForm } from "./components/LoginForm";
 import { Counter } from "./components/Counter";
 import { useResponsive } from "./hooks/useResponsive";
+import { PokemonViewer } from "./components/Pokemonviewer";
 
 export const App = () => {
 	const layout = useResponsive();
@@ -13,6 +14,7 @@ export const App = () => {
     <h1>Hook Practice</h1>
 			<LoginForm />
 			<Counter />
+			<PokemonViewer/>
 		</div>
 	);
 };

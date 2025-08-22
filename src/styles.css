@@ -34,3 +34,35 @@
 	display: flex;
 	gap: 20px;
 }
+
+.pokemon-viewer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 12px;
+	padding: 8px;
+	gap: 4px;
+}
+
+.card img {
+	border: 1px solid black;
+	border-radius: 100px;
+	background: linear-gradient(
+		180deg,
+		#e2350d 0%,
+		#e2350d 49%,
+		#000000 50%,
+		#ffffff 51%,
+		#ffffff 100%
+	);
+}
